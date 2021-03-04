@@ -1,0 +1,49 @@
+/* -------------STATISTICS------------------ */
+.statistics {
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+}
+
+.statistics__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 36px;
+    padding-bottom: 35px;
+}
+
+.statistics__card {
+    text-align: center;
+    max-width: 112px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+// .statistics__card:not(:last-of-type) {
+//     padding-right: 70px;
+// }
+
+.card__number {
+    padding-top: 3px;
+    font-size: 48px;
+    color: #fff;
+
+}
+
+.card__descr {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #C7B299;
+}
+
+.statistics__card::after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* ////////////////////////////////////// */

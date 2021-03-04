@@ -1,0 +1,127 @@
+/* -------------MOBILE-------------- */
+.mobile {
+    padding-top: 80px;
+}
+
+.mobile__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile__figure {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile__figcaption {
+    padding-top: 90px;
+}
+
+.mobile__figcaption-subtitle {
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+}
+
+.mobile__figcaption-text {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #8C8C8C;
+    line-height: 20px;
+}
+
+.mobile__figcaption-list {
+    padding-left: 60px;
+    padding-top: 50px;
+    font-size: 16px;
+    color: #8C8C8C;
+    line-height: 20px;
+}
+
+.mobile__figcaption-list-item {
+    line-height: 30px;
+}
+
+.mobile__figcaption-list-item:before {
+    content: url('../icons/circle_arrow.svg');
+    padding-right: 15px;
+    line-height: 30px;
+    vertical-align: -18%;
+}
+
+.block-mobile_show {
+    display: none;
+}
+
+@media(max-width:850px) {
+    .mobile__figcaption {
+        padding-top: 0px;
+
+        &-text {
+            padding-top: 10px;
+        }
+
+        &-list {
+            padding-left: 0;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media(max-width:680px) {
+    .mobile__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .mobile__figcaption-subtitle {
+        text-align: center;
+    }
+
+    .mobile__figcaption-list {
+        padding-top: 0;
+    }
+
+    .mobile__figcaption-text {
+        text-align: center;
+    }
+
+    .mobile__figcaption-list {
+        padding-top: 15px;
+        display: flex;
+
+        & img {
+            height: 250px;
+        }
+    }
+
+    .mobile__figure img {
+        display: none;
+    }
+
+    .block-mobile_show {
+        display: flex;
+
+        img {
+            align-self: flex-end;
+            height: 250px;
+        }
+    }
+
+    .mobile__figcaption-list {
+        display: none;
+
+    }
+
+    .show {
+        display: block;
+    }
+}
+
+@media(max-width:680px) {
+    .block-mobile_show img {
+        display: none;
+    }
+}
+
+/* ////////////////////////////////////// */

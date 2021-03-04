@@ -1,0 +1,28 @@
+/* ---------------PARTNERS---------------- */
+.partners {
+    margin-top: 40px;
+    display: flex;
+    background: url('../img/partners/bg_partners.png') no-repeat;
+    background-size: cover;
+    min-height: 489px;
+    max-height: 489px;
+}
+
+.partners__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners__wrapper img {
+    max-width: 210px;
+    max-height: 127px;
+}
+
+.partners__wrapper img:not(:last-of-type) {
+    padding-right: 75px;
+}
+
+/* //////////////////////////////////////////// */

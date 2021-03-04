@@ -1,0 +1,44 @@
+/* --------------VIDEO----------------- */
+.video {
+    margin-top: 33px;
+    display: flex;
+    background: url('../img/bg_video.png') no-repeat;
+    min-width: 100%;
+    min-height: 705px;
+    background-size: cover;
+}
+
+.video__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__title {
+    font-family: 'raleway', sans-serif;
+    padding-top: 31px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.video__text {
+    text-align: center;
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    max-width: 570px;
+}
+
+.video__time {
+    color: #C7B299;
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+/* /////////////////////////////////////// */

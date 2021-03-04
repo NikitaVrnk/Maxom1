@@ -1,0 +1,118 @@
+/* ---------------------HEADER------------------ */
+.header {
+    min-height: 100vh;
+    background: url('../img/bg_header.png') center center no-repeat;
+    background-size: cover;
+}
+
+.header__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.nav__link {}
+
+.link-items {
+    display: inline-block;
+    align-self: center;
+    margin-top: 20px;
+    color: #fff;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.link-items:hover {
+    color: #C7B299;
+    transition: all 0.3s ease;
+    transform: scale(1.4, 1.4);
+}
+
+.backet {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 25px;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.search {
+    display: inline-block;
+    transform: translateY(5px);
+
+}
+
+.search-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.header__info {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 570px;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header__point {
+    display: flex;
+    padding-bottom: 70px;
+    justify-content: center;
+}
+
+.header__point-item {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+}
+
+.header__point-item:hover {
+    border: 1px solid #D3C1AD;
+    background: transparent;
+    transition: all 0.3s ease;
+    transform: scale(1.3, 1.3);
+    cursor: pointer;
+}
+
+#select-point {}
+
+.header__point-item:not(:last-of-type) {
+    margin-right: 5px;
+}
+
+.arrow__left {
+    position: absolute;
+    top: 45%;
+}
+
+.arrow__right {
+    position: absolute;
+    top: 45%;
+    right: 0%;
+}
+
+/* ///////////////////////////////// */

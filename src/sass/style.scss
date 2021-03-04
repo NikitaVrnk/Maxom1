@@ -1,0 +1,60 @@
+@import 'fonts';
+@import 'block/header';
+@import 'block/services';
+@import 'block/idea';
+@import 'block/projects';
+@import 'block/video';
+@import 'block/mobile';
+@import 'block/statistics';
+@import 'block/posts';
+@import 'block/partners';
+@import 'block/footer';
+@import 'block/copiright';
+
+
+
+
+
+/* --------------------GLOBAL CLASSS-------------------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn {
+    max-width: 170px;
+    min-width: 170px;
+    height: 53px;
+    margin-top: 39px;
+    border: none;
+    color: #fff;
+    background: #988574;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.main_title {
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.main_subtitle {
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#check {
+    background-color: #998575;
+    color: #fff;
+}
+
+/* //////////////////////////////////////////// */

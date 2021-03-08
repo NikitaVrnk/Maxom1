@@ -60,3 +60,20 @@
 }
 
 /* /////////////////////////////////////////////// */
+
+
+@media screen and (max-width:1200px) {
+    .services__card {
+        margin-top: 15px;
+    }
+
+    .line {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:1000px) {
+    .services {
+        padding-top: 35px;
+    }
+}

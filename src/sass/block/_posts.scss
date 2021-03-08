@@ -97,3 +97,30 @@
 }
 
 /* /////////////////////////////////////// */
+
+@media screen and (max-width:768px) {
+    .posts__subtitle {
+        font-size: 25px;
+        padding-top: 35px;
+    }
+
+    .posts__descr {
+        padding-top: 10px;
+    }
+
+    .figuraption__subtitle {
+        padding-top: 5px;
+    }
+
+    .figuraption__text {
+        padding-top: 5px;
+    }
+
+    .figuraption__read {
+        padding-top: 5px;
+    }
+
+    .posts__arrow {
+        padding-top: 20px;
+    }
+}

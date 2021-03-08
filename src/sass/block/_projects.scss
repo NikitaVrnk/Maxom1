@@ -134,3 +134,39 @@ input[type="radio"]:checked+span {
 }
 
 /* ///////////////////////////////////// */
+
+@media screen and (max-width:992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .projects__title {
+        padding-top: 35px;
+        font-size: 24px;
+    }
+
+    .project__figure {
+        padding-top: 20px;
+    }
+
+    .projects__btn {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    label span {
+        font-size: 14px;
+    }
+
+    .project__figure img {
+        width: 100%;
+    }
+
+    .posts__figure img {
+        width: 100%;
+    }
+
+}

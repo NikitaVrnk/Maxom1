@@ -46,6 +46,7 @@
     font-weight: 400;
     padding-top: 44px;
     font-size: 28px;
+    line-height: 34px;
     color: #fff;
 }
 
@@ -57,3 +58,43 @@
 }
 
 /* /////////////////////////////////////////////// */
+@media screen and (max-width:768px) {
+    .idea__subtitle {
+        padding-top: 35px;
+        font-size: 20px;
+    }
+
+    .idea__bottom__title {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .idea__bottom {
+        padding-bottom: 10px;
+    }
+
+    .idea__bottom__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .idea__bottom-text {
+            text-align: center;
+        }
+
+        .idea__bottom__title {
+
+            padding-top: 20px;
+        }
+
+        .idea__bottom__subtitle {
+            font-size: 16px;
+        }
+
+        .btn {
+            margin: 15px auto;
+        }
+    }
+
+}

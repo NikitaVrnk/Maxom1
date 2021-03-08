@@ -19,9 +19,14 @@
     <header class="header">
         <div class=" container header__container">
             <nav class="nav">
+
                 <div class="nav__logo">
-                    <img src="img/Logo.png" alt="">
+                    <a href="">
+                        <img src="img/Logo.png" alt="">
+
+                    </a>
                 </div>
+
                 <div class="nav__link">
                     <a href="" class="link-items">Home</a>
                     <a href="" class="link-items">About us</a>
@@ -31,7 +36,9 @@
                     <a href="" class="link-items">Pricing </a>
                     <a href="" class="link-items">Shortcodes</a>
                     <a href="" class="link-items">Contact </a>
+                </div>
 
+                <div class="nav__search">
                     <buttton class="backet">
                         <img src="icons/backet.svg" alt="">
                     </buttton>
@@ -142,18 +149,15 @@
         </div>
     </section>
 
-    <div class="projects">
+    <section class="projects">
         <div class="container">
             <h2 class="projects__title">Our Latest Projects.</h2>
             <p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
                 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 
             <div class="projects__select">
-                <!-- <button class="select__btn" id="check">All</button>
-                <button class="select__btn">Web Design</button>
-                <button class="select__btn">Mobile App</button>
-                <button class="select__btn">Illustration</button>
-                <button class="select__btn">Photography</button> -->
+
+
                 <form action="#">
                     <label>
                         <input type="radio" name="Project" value="all" checked="checked">
@@ -177,7 +181,6 @@
                     </label>
                 </form>
             </div>
-
 
 
             <section class="figure__wrapper">
@@ -244,10 +247,21 @@
 
             <button class="btn projects__btn">LOAD MORE</button>
         </div>
-    </div>
+    </section>
 
     <section class="video">
-        <div class="container video__wrapper">
+
+        <video class="video__background"
+            poster="https://skrinshoter.ru/i/240221/jSctD67F.jpg?download=1&name=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2024-02-2021%2019:24:44.jpg"
+            controls preload="metadata" autoplay poster muted loop>
+            <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+                type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+            <a href="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+                type="video/mp4">посмотреть можно тут</a>
+        </video>
+
+        <div class="container video__wrapper ">
             <div class="video__play">
                 <img src="icons/video_play.png" alt="">
             </div>
@@ -479,6 +493,7 @@
             <span>Support</span>
         </div>
     </div>
+
 
 
 </body>

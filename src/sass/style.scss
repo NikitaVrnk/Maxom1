@@ -1,19 +1,4 @@
 @import 'fonts';
-@import 'block/header';
-@import 'block/services';
-@import 'block/idea';
-@import 'block/projects';
-@import 'block/video';
-@import 'block/mobile';
-@import 'block/statistics';
-@import 'block/posts';
-@import 'block/partners';
-@import 'block/footer';
-@import 'block/copiright';
-
-
-
-
 
 /* --------------------GLOBAL CLASSS-------------------- */
 body {
@@ -24,6 +9,7 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 .btn {
@@ -38,23 +24,74 @@ body {
     cursor: pointer;
 }
 
-.main_title {
-    font-family: 'raleway', sans-serif;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 61px;
-}
 
-.main_subtitle {
-    font-family: 'raleway', sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 42px;
-}
 
 #check {
     background-color: #998575;
     color: #fff;
 }
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+@import 'block/header';
+@import 'block/services';
+@import 'block/idea';
+@import 'block/projects';
+@import 'block/video';
+@import 'block/mobile';
+@import 'block/statistics';
+@import 'block/posts';
+@import 'block/partners';
+@import 'block/footer';
+@import 'block/copiright';
+
+@import 'media';
 
 /* //////////////////////////////////////////// */

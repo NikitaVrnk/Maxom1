@@ -54,12 +54,19 @@
     display: none;
 }
 
-@media(max-width:850px) {
+/* ////////////////////////////////////// */
+
+
+@media(max-width:1000px) {
     .mobile__figcaption {
         padding-top: 0px;
 
         &-text {
             padding-top: 10px;
+        }
+
+        &-subtitle {
+            text-align: center;
         }
 
         &-list {
@@ -69,59 +76,63 @@
     }
 }
 
-@media(max-width:680px) {
-    .mobile__wrapper {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width:992px) {}
 
-    .mobile__figcaption-subtitle {
-        text-align: center;
-    }
+@media screen and (max-width:768px) {
+    .mobile {
+        padding-top: 35px;
 
-    .mobile__figcaption-list {
-        padding-top: 0;
-    }
-
-    .mobile__figcaption-text {
-        text-align: center;
-    }
-
-    .mobile__figcaption-list {
-        padding-top: 15px;
-        display: flex;
-
-        & img {
-            height: 250px;
+        &__figure {
+            display: flex;
+            flex-direction: column;
         }
+
+        .mobile__figcaption {
+            &-subtitle {
+                font-size: 21px;
+            }
+
+            &-text {
+                line-height: 16px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            &-list {
+                padding-top: 15px;
+            }
+
+        }
+
+    }
+
+
+
+
+
+    .mobile__figcaption-list-item {
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .mobile__figure img {
-        display: none;
+        padding-top: 5px;
+        height: 250px;
+        order: 3;
+        margin: 0 auto;
     }
 
-    .block-mobile_show {
+}
+
+@media screen and (max-width:576px) {
+    .mobile__figcaption-list-item {
+        padding-top: 10px;
         display: flex;
-
-        img {
-            align-self: flex-end;
-            height: 250px;
-        }
-    }
-
-    .mobile__figcaption-list {
-        display: none;
+        width: 95%;
 
     }
 
-    .show {
-        display: block;
+    .mobile__figcaption-list-item:before {
+        line-height: 14px;
     }
 }
-
-@media(max-width:680px) {
-    .block-mobile_show img {
-        display: none;
-    }
-}
-
-/* ////////////////////////////////////// */

@@ -4,25 +4,32 @@
     display: flex;
     background: url('../img/partners/bg_partners.png') no-repeat;
     background-size: cover;
-    min-height: 489px;
-    max-height: 489px;
+    height: 489px;
 }
 
 .partners__wrapper {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .partners__wrapper img {
+    padding: 5px;
     max-width: 210px;
     max-height: 127px;
 }
 
-.partners__wrapper img:not(:last-of-type) {
-    padding-right: 75px;
-}
+// .partners__wrapper img:not(:last-of-type) {
+//     padding-right: 75px;
+// }
 
 /* //////////////////////////////////////////// */
+
+@media screen and (max-width:768px) {
+    .partners__wrapper img {
+        max-height: 100px;
+        margin: 0 10px;
+    }
+}

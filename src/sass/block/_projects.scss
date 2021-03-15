@@ -43,16 +43,10 @@ input[type="radio"] {
     display: none;
 }
 
-/* label:hover span {
-    background: #00BCD4;
-    cursor: pointer;
-  } */
-
 input[type="radio"]:checked+span {
     color: #fff;
     background: #998575;
 }
-
 
 .select__btn {
     text-align: center;
@@ -74,7 +68,7 @@ input[type="radio"]:checked+span {
 }
 
 .project__figure {
-    padding-top: 70px;
+    margin-top: 70px;
     max-width: 370px;
     position: relative;
 }
@@ -86,7 +80,7 @@ input[type="radio"]:checked+span {
     border-width: 0 15px 10px 15px;
     border-color: transparent transparent #FBFAF8 transparent;
     position: absolute;
-    bottom: 22%;
+    bottom: 26%;
     left: 5%;
 }
 
@@ -148,7 +142,7 @@ input[type="radio"]:checked+span {
     }
 
     .project__figure {
-        padding-top: 20px;
+        margin-top: 20px;
     }
 
     .projects__btn {

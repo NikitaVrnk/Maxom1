@@ -9,7 +9,6 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .btn {
@@ -24,13 +23,10 @@ body {
     cursor: pointer;
 }
 
-
-
 #check {
     background-color: #998575;
     color: #fff;
 }
-
 
 @keyframes shake {
     0% {
@@ -78,8 +74,6 @@ body {
     }
 }
 
-
-
 @import 'block/header';
 @import 'block/services';
 @import 'block/idea';
@@ -90,8 +84,6 @@ body {
 @import 'block/posts';
 @import 'block/partners';
 @import 'block/footer';
-@import 'block/copiright';
-
 @import 'media';
 
 /* //////////////////////////////////////////// */

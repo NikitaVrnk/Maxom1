@@ -10,7 +10,6 @@
 }
 
 .services__card {
-    // width: 25%;
     min-width: 270px;
     max-width: 270px;
     padding-right: 5px;
@@ -51,7 +50,6 @@
 .services__card:hover svg {
     transition: all 0.5s ease-in-out;
     transform: rotate(720deg);
-
     fill: #C7B299;
 }
 
@@ -60,8 +58,6 @@
 }
 
 /* /////////////////////////////////////////////// */
-
-
 @media screen and (max-width:1200px) {
     .services__card {
         margin-top: 15px;

@@ -1,23 +1,11 @@
-$(document).ready(function () {
-    $('.slider').slick({
-        arrows: true,
-        dots: true,
-        slidesToShow: 2,
-        autoplay: false,
-        speed: 1000,
-        autoplaySpeed: 800,
-        responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-});
+let x = document.getElementById("trigger")
+
+document.getElementById("trigger").onclick = function () {
+    open()
+    x.classList.toggle("change")
+
+};
+
+function open() {
+    document.getElementById("burger-menu").classList.toggle("show");
+}

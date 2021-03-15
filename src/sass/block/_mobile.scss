@@ -106,10 +106,6 @@
 
     }
 
-
-
-
-
     .mobile__figcaption-list-item {
         font-size: 14px;
         line-height: 16px;
@@ -121,7 +117,6 @@
         order: 3;
         margin: 0 auto;
     }
-
 }
 
 @media screen and (max-width:576px) {
@@ -129,7 +124,6 @@
         padding-top: 10px;
         display: flex;
         width: 95%;
-
     }
 
     .mobile__figcaption-list-item:before {

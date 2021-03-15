@@ -1,4 +1,6 @@
 /* ---------------------HEADER------------------ */
+
+//////////////////////////////////////////////
 .header {
     min-height: 100vh;
     background: url('../img/bg_header.png') center center no-repeat;
@@ -11,13 +13,13 @@
     flex-direction: column;
 }
 
-.nav {
+.header__top {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.nav__logo {
+.header__top-logo {
     display: flex;
     flex: 1 1;
     padding-right: 25px;
@@ -31,7 +33,7 @@
     }
 }
 
-.nav__logo:hover {
+.header__top-logo:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -60,11 +62,10 @@
     transform: scale(1.4, 1.4);
 }
 
-.nav__search {
+.header__top-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .backet {
@@ -75,10 +76,10 @@
     cursor: pointer;
 }
 
+
 .search {}
 
 .search-btn {
-
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -102,7 +103,6 @@
     font-size: 52px;
     line-height: 61px;
 }
-
 
 .main_subtitle {
     font-family: 'raleway', sans-serif;
@@ -147,12 +147,13 @@
 .arrow__left {
     position: absolute;
     top: 45%;
+    left: 50px;
 }
 
 .arrow__right {
     position: absolute;
     top: 45%;
-    right: 0%;
+    right: 50px;
 }
 
 /* ///////////////////////////////// */
@@ -175,7 +176,7 @@
         order: 3;
     }
 
-    .nav {
+    .header__top {
         flex-wrap: wrap;
         padding-top: 10px;
         justify-content: center;
@@ -198,13 +199,125 @@
     }
 
     .arrow__right {
+        right: 10px;
         width: 25px;
     }
 
     .arrow__left {
         width: 25px;
+        left: 10px;
+
     }
 }
+
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width:640px) {
+    .header__top {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &-logo {
+            img {
+                max-height: 45px;
+                min-height: 45px;
+
+            }
+        }
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .backet {
+        padding-right: 20px;
+    }
+
+    .burger {
+        padding-left: 20px;
+        z-index: 4;
+    }
+
+    .burger-menu {
+        padding-left: 10px;
+        display: flex;
+        display: none;
+        z-index: -1;
+        text-align: center;
+        flex-direction: column;
+        background-color: #555;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        a {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            line-height: 45px;
+            display: block;
+        }
+
+        .link-items:not(:last-of-type) {
+            padding-right: 0px;
+        }
+
+        .link-items:nth-child(1) {
+            margin-top: 70px;
+        }
+    }
+
+    .trigger {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #222;
+        margin: 6px 0;
+        transition: 0.2s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-10px, 7px);
+        transform: rotate(-45deg) translate(-10px, 7px);
+        transition: 0.5s ease;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-7px, -6px);
+        transform: rotate(45deg) translate(-7px, -6px);
+    }
+
+    #burger-menu {}
+
+    .show {
+        display: block;
+        height: 100vh;
+        display: block;
+        opacity: 0.95;
+        overflow: auto;
+        //не работает transition, наверно как то через JS
+        transition: all 1s ease;
+    }
+}
+
 
 @media screen and (max-width:576px) {
 
